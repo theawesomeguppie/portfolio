@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            h1 {
+                color: rgb(175, 248, 223);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p {
+                font: size 11pt;
+            }
+            .banner {
+                display: flex;
+                align-items: centered;
+                justify-content: space-between;
+                height: 100px;
+                width: 100%;
+                background-color: #e1717e;
+                font-size: 24px;
+                font-family: "Courier New", Courier, monospace;
+                text-align: center;
+            }
+            .option {
+                flex-grow: 1;
+                height: 100%;
+                line-height: 100px;
+                font-family: "Courier New", Courier, monospace;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                color: black;
+                font-size: 24px;
+                font-family: "Courier New", Courier, monospace;
+            }
+
+            /* Clear floats after image containers */
+            .row::after {
+                clear: both;
+                display: table;
+            }
+
+            .row {
+                display: flex;
+                flex-direction: row;
+                max-width: 100%;
+                justify-content: space-between;
+            }
+
+            .column {
+                height: calc(100vh - 100px);
+                overflow: hidden;
+            }
+
+            .row img {
+                height: calc(100vh - 100px);
+            }
+        </style>
+
+        <body>
+            <div class="banner">
+                <div class="option"><a href="index.html">Home</a></div>
+                <div class="option"><a href="aboutme.html">About Me</a></div>
+                <div class="option"><a href="projects.html">Projects</a></div>
+                <div class="option"><a href="resume.html">Resume</a></div>
+                <div class="option"><a href="contact.html">Contact</a></div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="glitch.png" alt="glitch" style="width: 50vw" />
+                </div>
+                <div class="column">
+                    <img
+                        src="moon.png"
+                        alt="moon"
+                        style="width: 40vw; height: calc((100vh - 100px) * 0.95)"
+                    />
+                </div>
+            </div>
+        </body>
+    </head>
+</html>
